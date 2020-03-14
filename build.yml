@@ -1,0 +1,4 @@
+image: os-rustysd
+org: dengleros
+arches:
+  - amd64
