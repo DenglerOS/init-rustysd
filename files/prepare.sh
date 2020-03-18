@@ -10,7 +10,7 @@ for DIR in $SERVICES; do
 
         /bin/sed "s#{{NAME}}#$NAME#g" /etc/unitfile.tpl | \
         /bin/sed "s#{{DIR}}#$DIR#g" | \
-        /bin/sed "s#{{TYPE}}#$TYPE#g" > /unitfiles/$NAME.service
+        /bin/sed "s#{{TYPE}}#$TYPE#g" > /etc/unitfiles/$NAME.service
 
         /bin/mount -t overlay overlay -o lowerdir=$DIR/lower,upperdir=$DIR/rootfs,workdir=$DIR/tmp $DIR/rootfs
 done

@@ -1,0 +1,6 @@
+logging_dir = "/var/log"
+log_to_stdout = false
+log_to_disk = true
+notifications_dir = "var/run/rustysd"
+unit_dirs = [ "etc/unitfiles" ]
+target_unit = "default.target"
